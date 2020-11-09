@@ -1,0 +1,13 @@
+#nav-header{
+    background-color:aliceblue;
+}
+#nav-header a{
+    padding:4.5%;
+    color:darkblue;
+    font-size: 1.5em;
+    text-decoration:none;
+}
+body{
+    font-family: "Turret Road", cursive;
+    background-color:#a2defc;
+}
