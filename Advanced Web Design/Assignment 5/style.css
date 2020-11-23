@@ -1,3 +1,21 @@
+#heading{
+    text-shadow: 0px 2px 5px;
+    text-align: center;
+}
+#container{
+    text-align: center;
+}
+.hovered{
+    width:150px;
+    height:100px;
+    transition:width 3s, height 3s;
+    border-radius:20px;
+    border: solid black 5px;
+}
+.hovered:hover{
+    width:300px;
+    height:200px;
+}
 footer{
     text-align: center;
 }
