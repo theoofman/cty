@@ -1,3 +1,34 @@
+#container{
+    max-width:800px;
+    margin:auto;
+    text-align: center;
+}
+#paragraph1{
+    width:600px;
+}
+.paragraph{
+    width:800px;
+}
+.fruit img{
+    width:90px;
+    height:60px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fruit{
+    border-top: solid pink;
+    border-bottom: solid pink;
+}
+#ticket{
+    position:fixed;
+    text-align: left;
+    right:15%;
+    top:100px;
+    width:200px;
+    height:100px;
+}
 footer{
     text-align: center;
 }
