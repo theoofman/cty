@@ -10,11 +10,11 @@ img{
     height:200px;
 }
 #left{
-    float:left;
+    text-align: center;
     display:inline-block;
 }
 #center{
-    align-content: center;
+    display:inline-block;
     text-align: center;
     
 }
