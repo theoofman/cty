@@ -1,28 +1,16 @@
 #topp{
     column-count:2;
 }
-.container{
-    align-content: center;
-    text-align: center;
-}
 img{
     width:300px;
     height:200px;
+    margin-left:auto;
+    margin-right:auto;
 }
-#left{
-    text-align: center;
-    display:inline-block;
-}
-#center{
-    display:inline-block;
-    text-align: center;
-    
-}
-.right{
-    float:right;
-}
-#pcontainer p{
-    width:300px;
+.container{
+    column-count:3;
+    display:flex;
+    flex-wrap:nowrap;
 }
 footer{
     text-align: center;
