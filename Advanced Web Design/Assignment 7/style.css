@@ -1,0 +1,35 @@
+#topp{
+    column-count:2;
+}
+.container{
+    align-content: center;
+    text-align: center;
+}
+img{
+    width:300px;
+    height:200px;
+}
+#left{
+    float:left;
+    display:inline-block;
+}
+#center{
+    align-content: center;
+    text-align: center;
+    
+}
+.right{
+    float:right;
+}
+#pcontainer p{
+    width:300px;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    font-size:10px;
+}
+footer p{
+    font-size:12px;
+}
