@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var number = Math.floor(Math.random() * 5)+1; 
+            var guess1 = parseInt(prompt("Guess a number between 1 and 5"));
+            if(guess1 == number){
+                alert("You guessed it!");
+            }
+            else{
+                alert("WRONG");
+            }
+            var guess2 = parseInt(prompt("Guess a number between 1 and 5"));
+            if(guess2 == number){
+                alert("You guessed it!");
+            }
+            else{
+                alert("WRONG");
+            }
+            var guess3 = parseInt(prompt("Guess a number between 1 and 5"));
+            if(guess3 == number){
+                alert("You guessed it!");
+            }
+            else{
+                alert("You failed");
+            }
+            alert("The correct number was "+number);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
