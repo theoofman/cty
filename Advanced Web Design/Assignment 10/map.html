@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script>
+            var map;
+            function displayMap()
+            {
+                var location = new google.maps.LatLng(33.7499599,-118.7986635);
+                
+                var options = {zoom: 7, center:location,mapTypeid: google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("map_canvas"), options);
+                
+                var restaurantLocation = new google.maps.LatLng(34.16278070885782,  -118.0528255731066)
+                var restaurantMarker = new google.maps.Marker({position: restaurantLocation, map: map, title: "A restaurant that I like"});
+                var infoWindow = new google.maps.InfoWindow({content : "<p>A restaurant that I like</p>"});
+                google.maps.event.addListener( restaurantMarker, "click", function(){infoWindow.open( map, restaurantMarker);});
+            }
+            function showPosition()
+            {
+                if(navigator.geolocation)
+                    navigator.geolocation.getCurrentPosition(displayPosition, displayError);
+                else
+                    alert("Geolocation is not supported");
+            }
+        </script>
     </head>
-    <body>
-        <p>Yee</p>
+    <body onload="displayMap()">
+        <div id="map_canvas" style="width: 640px; height:480px;"></div>
     </body>
 </html>

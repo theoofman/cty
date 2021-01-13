@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head> 
+<script> 
+function drag(event) 
+{ 
+	event.dataTransfer.setData("Text", event.target.id); 
+} 
+
+function permitDrop(event) 
+{ 
+	event.preventDefault(); 
+}
+
+function drop(event) 
+{ 
+	event.preventDefault(); 
+	var data=event.dataTransfer.getData("Text"); 
+	event.target.appendChild(document.getElementById(data));
+}
+</script> 
+</head> 
+<body> 
+<img src="chrysanthemum.jpg" draggable="true" id="mums" width="400" height="300"> 
+<img src="tulips.jpg" draggable="true" id="tulips" width="400" height="300" ondragstart="drag(event)"> 
+
+<div ondragover="permitDrop(event)" ondrop="drop(event)" style="background-color: yellow; width:400px; height:300px"></div> 
+ 
+</body></html>

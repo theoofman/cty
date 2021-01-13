@@ -1,0 +1,10 @@
+iframe{
+    width:49%;
+    height:500px;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}

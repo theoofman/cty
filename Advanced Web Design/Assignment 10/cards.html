@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards</title>
+        <script>
+             
+                function drag(event) 
+                { 
+                        event.dataTransfer.setData("Text", event.target.id); 
+                } 
+
+                function permitDrop(event) 
+                { 
+                        event.preventDefault(); 
+                }
+
+                function drop(event) 
+                { 
+                        event.preventDefault(); 
+                        var data=event.dataTransfer.getData("Text"); 
+                        event.target.appendChild(document.getElementById(data));
+                }
+        </script>
+        <style>
+            body{
+                text-align: center;
+            }
+            div{
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div ondragover="permitDrop(event)" ondrop="drop(event)" style="width:700px; height:110px;border: 1px solid black"></div>
+        <img src="Assets/d8.gif" draggable="true" id="d8" width="70px" height="100px" ondragstart="drag(event)">
+        <img src="Assets/d9.gif" draggable="true" id="d9" width="70px" height="100px" ondragstart="drag(event)">
+        <img src="Assets/d10.gif" draggable="true" id="d10" width="70px" height="100px" ondragstart="drag(event)">
+        <img src="Assets/dj.gif" draggable="true" id="dj" width="70px" height="100px" ondragstart="drag(event)">
+        <img src="Assets/dq.gif" draggable="true" id="dq" width="70px" height="100px" ondragstart="drag(event)">
+        <img src="Assets/dk.gif" draggable="true" id="dk" width="70px" height="100px" ondragstart="drag(event)">
+        
+    </body>
+</html>
